@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+.Main_Body_Container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+}
+.Chat_Container{
+    width:55%;
+    margin-top: 64px;
+    padding: 0px 20px;
+    background-color: white;
+}
+.message_container{
+    margin-top: 64px;
+    background-color: #F8FAFB;
+    width: 30%;
+    padding: 20px;
+    line-height: 1.20;
+}
+.message_header{
+    display: flex;  
+    width: 100%;
+    padding:20px;
+}
+
+.message_title{
+    font-size: 28px;
+    font-family: 'Work Sans', sans-serif;
+    width: 65%;
+}
+.compose_container{
+    display: flex;
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+    background-color: #31AAB7;
+    align-items: center;
+    color: white;
+    border-radius: 2px;
+}
+.edit_img{
+    padding: 5px;
+}
+.Compose_title{
+    font-family: 'Work Sans', sans-serif;   
+}
+.message_wrap{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding: 5px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey;
+    width: 100%;
+}
+.message_wrap1{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 100%;
+}
+.message_wrap3{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+.maylee_chat{
+    margin-top: 20px;
+    display: grid;
+}
+.maylee_header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.Maylee_sideheader{
+    width: 75%;
+    font-weight: 800;
+    color: #324552;
+    font-family: 'Work Sans', sans-serif;  
+}
+.maylee_time{
+    width: 25%;
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;  
+}
+.Maylee_content{
+    padding: 10px ;
+    width: 72%;
+}
+.hale_content{
+    padding: 10px ;
+    width: 72%;
+}
+.Jody_content{
+    padding: 10px ;
+    width: 72%;
+}
+.spot_dot{
+    width: 8%;
+}
+
+.maylee_img{
+    padding: 12px 10px;
+}
+.hale_img{
+    padding: 12px 11px;
+}
+.hale_image{
+    width: 85%;
+    height: 85%;
+}
+.Jody_img{
+    padding: 12px 11px;
+}
+.mayle_image{
+    width: 85%;
+    height: 85%;
+}
+
+.maylee_subcontent{
+    color: #324552;
+    padding:5px 5px 5px 0px;
+    font-family: 'Work Sans', sans-serif;  
+}
+.blue_dot{
+    width: 8px;
+    height: 8px;
+    background-color: #0078CE;
+    float: left;
+    border-radius: 8px;
+    margin: 10px;
+}
+.Chat_Board{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.Welcome_title{
+    width: 80%;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;   
+}
+.Chat_Icons{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.add_icon{
+    font-size: 30px;
+}
+.group_image{
+    width: 20%;
+}
+.group_images{
+    margin: 15px;
+}
+.three_dots{
+    font-size: 30px;
+}
+.Maylee_chat1{
+    width: 50%;
+    padding: 20px;
+}
+.maylee_head{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.Mayle_image1{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    
+}
+.mayle_img1{
+    padding: 10px;
+}
+.mayle_timer{
+    width: 25%;
+    
+    font-family: 'Work Sans', sans-serif; 
+}
+.mayle_name{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;   
+}
+.mayle_matter1{
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #0078CE;
+    border-radius: 8px;
+    color: white;
+    width: 90%;
+    margin: 10px;
+}
+.Jody_chat{
+    width: 50%;
+    float: right;
+    padding: 20px;
+}
+.jody_matter1{
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F8FAFB;
+    border-radius: 8px;
+    width: 90%;
+    margin: 10px;
+}
+.Alex_chat{
+    width:52%;
+    padding: 20px;
+    float: left;
+}
+.Alex_matter1{
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #0078CE;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    margin: 10px;
+}
+.Maylee_chat2{
+    width: 51%;
+    float: right;
+    padding: 20px;
+}
+.mayle_matter2{
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F8FAFB;
+    border-radius: 8px;
+    width: 95%;
+    margin: 10px;
+}
+.Maylee_chat3{
+    width: 54%;
+    padding: 20px;
+}
+.Bottom_input{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.input_field{
+    width: 90%;
+}
+.input1{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    height: 4vw;
+    font-family: 'Work Sans', sans-serif;
+}
+.add_icon{
+    padding: 20px;
+    font-size: large;
+}
+.mayle_image1{
+    width: 50%;
+    height: 50%;
+}
+.hale_image1{
+    height: 50%;
+    width: 50%;
+}
+.jody_image{
+    height: 50%;
+    width: 50%
+}
+
+/* media queries for laptop*/
+
+@media only screen and (max-width: 1200px){
+    .message_container{
+        width:35%;
+    }
+    .Chat_Container{
+        width: 50%;
+    }
+    .message_header{
+        padding: 20px 0px;
+    }
+    .message_title {
+        font-size: 28px;
+        font-family: 'Work Sans', sans-serif;
+        width: 60%;
+    }
+    .compose_container{
+        width:40%;
+    }
+    .maylee_time{
+        font-size: 10px;
+    }
+    .message_wrap{
+        width: 100%;
+    }
+    .maylee_img{
+        padding: 10px 12px;
+    }
+    .Maylee_content{
+        width: 72%;
+    }
+    .mayle_image {
+        width: 85%;
+        height: 85%;
+    }
+    .hale_image {
+        width: 80%;
+        height: 80%;
+    }
+    .hale_content {
+        width: 72%;
+    }
+    .Jody_img {
+        padding: 12px 11px;
+    }
+    .message_wrap1{
+        width: 100%;
+    }
+    .mayle_name{
+        font-size: 13px;
+    }
+    .mayle_timer{
+        font-size: 11px;
+    }
+    .hale_img {
+        padding: 12px 11px;
+    }
+    .maylee_subcontent{
+        font-size: 13px;
+    }
+    .Welcome_title {
+        width: 70%;
+    }
+    .Chat_Icons {
+        width: 30%;
+    }
+    .Maylee_chat3 {
+        width: 55%;
+    }
+}
+
+
+/*Media Queries for Tablet*/
+ 
+@media only screen and (max-width:992px){
+    .message_container{
+        width: 40%;
+    }
+    .Chat_Container{
+        width: 60%;
+    }
+    .mayle_image {
+        width: 80%;
+    }
+    .Maylee_content {
+        width: 80%;
+    }
+    .hale_content {
+        width: 80%;
+    }
+    .Jody_content {
+        width: 72%;
+    }
+    .maylee_subcontent {
+        font-size: 12px;
+    }
+    .Maylee_sideheader {
+        font-size: 12px;
+    }
+    .maylee_time {
+        font-size: 8px;
+    }
+    .message_title {
+        font-size: 28px;
+        width: 70%;
+    }
+    .Welcome_title{
+        font-size: 24px;
+        width:65%;
+    }
+    .Chat_Icons{
+        width: 35%;
+    }
+    .mayle_timer{
+        font-size: 10px
+    }
+    .mayle_img1 {
+        padding: 0px;
+    }
+    .Maylee_chat3 {
+        width: 55%;
+        padding: 5px;
+    }
+    .Maylee_chat1{
+        padding: 5px;
+    }
+    .Jody_chat{
+        padding: 5px;
+    }
+    .Alex_chat{
+        padding:5px;
+    }
+    .Maylee_chat2{
+        padding: 5px;
+    }
+    .mayle_matter1{
+        font-size: 12px;
+    }
+    .jody_matter1{
+        font-size: 12px;
+    }
+    .Alex_matter1{
+        font-size: 12px;
+    }
+    .mayle_matter2{
+        font-size: 12px;
+    }
+    .input1{
+        font-size: 15px;
+    }
+}
+
+
+
+/*Media Queiries for Mobiles */
+
+@media only screen and (max-width:768px){
+    .Main_Body_Container{
+        display: grid;
+    }
+    .message_container {
+        width: 80%;
+        height: 100vh;
+        margin: 10%;
+    }
+    .Chat_Container {
+        width: 90%;
+        margin: 0% 5%;
+    }
+    .Bottom_input {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .input_field {
+        width: 90%;
+        height: 4vh;
+    }
+    .Maylee_sideheader {
+        font-size: 15px;
+    }
+    .maylee_time {
+        font-size: 10px;
+    }
+    .maylee_subcontent{
+        font-size:14px;
+    }
+}
