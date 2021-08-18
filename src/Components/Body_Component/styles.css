@@ -5,8 +5,17 @@
     justify-content: flex-end;
     background-color: white;
 }
+.empty_cont{
+    width:17%;
+}
+.Body_Part_Container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
 .Chat_Container{
-    width:55%;
+    width:62%;
     margin-top: 64px;
     padding: 0px 20px;
     background-color: white;
@@ -14,9 +23,10 @@
 .message_container{
     margin-top: 64px;
     background-color: #F8FAFB;
-    width: 30%;
+    width: 37%;
     padding: 20px;
     line-height: 1.20;
+    
 }
 .message_header{
     display: flex;  
@@ -31,13 +41,17 @@
 }
 .compose_container{
     display: flex;
-    width: 35%;
+    width: auto;
     text-align: center;
     justify-content: center;
-    background-color: #31AAB7;
     align-items: center;
-    color: white;
+    
     border-radius: 2px;
+}
+#Button_Compose{
+    background-color: #31AAB7;
+    color: white;
+    font-size: 14px;
 }
 .edit_img{
     padding: 5px;
@@ -60,13 +74,26 @@
     padding: 5px 0px;
     border-radius: 10px;
     width: 100%;
+    transition: transform 0s;
+}
+.message_wrap1:hover{
+    transform: scale(1.01);
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px grey;
+    cursor: pointer;
 }
 .message_wrap3{
-    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     padding: 5px 0px;
     border-radius: 10px;
+    transition: transform 0s;
+}
+.message_wrap3:hover{
+    transform: scale(1.01);
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px grey;
+    cursor: pointer;
 }
 .maylee_chat{
     margin-top: 20px;
@@ -90,15 +117,15 @@
     font-family: 'Work Sans', sans-serif;  
 }
 .Maylee_content{
-    padding: 10px ;
+    padding: 10px 0px ;
     width: 72%;
 }
 .hale_content{
-    padding: 10px ;
+    padding: 10px 0px ;
     width: 72%;
 }
 .Jody_content{
-    padding: 10px ;
+    padding: 10px 0px;
     width: 72%;
 }
 .spot_dot{
@@ -106,21 +133,24 @@
 }
 
 .maylee_img{
+    text-align: center;
     padding: 12px 10px;
 }
 .hale_img{
     padding: 12px 11px;
+    text-align: center;
 }
 .hale_image{
-    width: 85%;
-    height: 85%;
+    width: 50px;
+    height: 50px;
 }
 .Jody_img{
     padding: 12px 11px;
+    text-align: center;
 }
 .mayle_image{
-    width: 85%;
-    height: 85%;
+    width: 50px;
+    height: 50px;
 }
 
 .maylee_subcontent{
@@ -134,36 +164,41 @@
     background-color: #0078CE;
     float: left;
     border-radius: 8px;
-    margin: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .Chat_Board{
     width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
+    
 }
 .Welcome_title{
-    width: 80%;
+    width: 70%;
     font-size: 30px;
     font-weight: 400;
     font-family: 'Work Sans', sans-serif;   
 }
 .Chat_Icons{
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
 }
 .add_icon{
     font-size: 30px;
 }
+#Add_img{
+    color: grey;
+}
 .group_image{
-    width: 20%;
+    width: 22px;
 }
-.group_images{
-    margin: 15px;
-}
+
 .three_dots{
+    color: grey;
     font-size: 30px;
+    margin: -15px 0px;
 }
 .Maylee_chat1{
     width: 50%;
@@ -178,10 +213,15 @@
     width: 75%;
     display: flex;
     align-items: center;
-    
+}
+.mayle_image1{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
 }
 .mayle_img1{
     padding: 10px;
+    text-align: center;
 }
 .mayle_timer{
     width: 25%;
@@ -247,10 +287,14 @@
     padding: 20px;
 }
 .Bottom_input{
+    background-color: white;
     width: 100%;
     padding: 0px 20px;
     display: flex;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
 }
 .input_field{
     width: 90%;
@@ -266,24 +310,49 @@
     padding: 20px;
     font-size: large;
 }
-.mayle_image1{
-    width: 50%;
-    height: 50%;
-}
+
 .hale_image1{
-    height: 50%;
-    width: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
 }
 .jody_image{
-    height: 50%;
-    width: 50%
+    height: 50px;
+    width: 50px;
+    padding: 5px;
 }
+.Mobile_nav{
+    display: none;
+}
+.Mob_Mail{
+    display: none;
+}
+
+
+/*media Queries for large laptops*/
+@media only screen and (min-width:1201px) and (max-width:1496px){
+    .Chat_Container {
+        width: 57%;
+    }
+
+
+}
+
+
+
 
 /* media queries for laptop*/
 
 @media only screen and (max-width: 1200px){
+    
+    #Button_Compose{
+        font-size: 12px;
+    }
+    .message_title {
+        font-size: 26px;
+    }
     .message_container{
-        width:35%;
+        width:38%;
     }
     .Chat_Container{
         width: 50%;
@@ -312,12 +381,12 @@
         width: 72%;
     }
     .mayle_image {
-        width: 85%;
-        height: 85%;
+        width: 50px;
+        height: 50px;
     }
     .hale_image {
-        width: 80%;
-        height: 80%;
+        width: 50px;
+        height: 50px;
     }
     .hale_content {
         width: 72%;
@@ -349,12 +418,48 @@
     .Maylee_chat3 {
         width: 55%;
     }
+    .mayle_img1{
+        padding: 0px;
+    }
+    .Maylee_chat1 {
+        width: 80%;
+    }
+    .Jody_chat {
+        width: 80%;
+    }
+    .Alex_chat {
+        width: 80%;
+    }
+    .Maylee_chat2 {
+        width: 80%;
+    }
+    .Maylee_chat3 {
+        width: 80%;
+    }
+    .Chat_Board {
+        width: 100%;
+    }
+    .Welcome_title {
+        font-size: 24px;
+        width: 60%;
+    }
+    .Chat_Icons{
+        width: 40%;
+    }
+    .group_image {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 
 /*Media Queries for Tablet*/
  
 @media only screen and (max-width:992px){
+    
+    .empty_cont{
+        display: none;
+    }
     .message_container{
         width: 40%;
     }
@@ -366,12 +471,15 @@
     }
     .Maylee_content {
         width: 80%;
+        padding: 12px 0px;
     }
     .hale_content {
         width: 80%;
+        padding: 12px 0px;
     }
     .Jody_content {
-        width: 72%;
+        width: 80%;
+        padding: 12px 0px;
     }
     .maylee_subcontent {
         font-size: 12px;
@@ -400,20 +508,24 @@
         padding: 0px;
     }
     .Maylee_chat3 {
-        width: 55%;
+        width: 60%;
         padding: 5px;
     }
     .Maylee_chat1{
         padding: 5px;
+        width: 60%;
     }
     .Jody_chat{
         padding: 5px;
+        width: 60%;
     }
     .Alex_chat{
         padding:5px;
+        width: 60%;
     }
     .Maylee_chat2{
         padding: 5px;
+        width: 60%;
     }
     .mayle_matter1{
         font-size: 12px;
@@ -430,6 +542,22 @@
     .input1{
         font-size: 15px;
     }
+    .hale_image{
+        width: 50px;
+        height: 50px;
+    }
+    .mayle_image{
+        width: 55px;
+        height: 55px;
+        padding: 2px;
+    }
+    .maylee_img{
+        padding: 10px 8px;
+    }
+    .group_image {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 
@@ -437,7 +565,10 @@
 /*Media Queiries for Mobiles */
 
 @media only screen and (max-width:768px){
-    .Main_Body_Container{
+    .message_header{
+        display: none;
+    }
+    .Body_Part_Container{
         display: grid;
     }
     .message_container {
@@ -465,5 +596,173 @@
     }
     .maylee_subcontent{
         font-size:14px;
+    }
+    .message_wrap3{
+        width: 100%;
+    }
+    .Maylee_chat1 {
+        width: 60%;
+    }
+    .Jody_chat {
+        width: 60%;
+    }
+    .Alex_chat {
+        width: 60%;
+    }
+    .Maylee_chat2 {
+        width: 60%;
+    }
+    .Maylee_chat3 {
+        width: 60%;
+    }
+    .Maylee_content,.Jody_content {
+        padding: 15px 0px;
+    }
+
+
+    
+    .Mobile_nav{
+        display: flex;
+        margin-top: 64px;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+    }
+    .Mob_menu{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        justify-content: flex-start;
+    }
+    .Mob_Icons{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+    #ios_mob{
+        margin-top: 4px;
+        margin-bottom: 3px;
+    }
+    .Mob_HD{
+        width: 60px;
+        padding: 10px;
+    }
+    .message_container {
+        margin: 0px;
+        width: 100%;
+    }
+    .Mob_Mail{
+        background-color: #31AAB7 ;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        float: right;
+        margin-top: 140px;
+    }
+    .Mob_Mail{
+        display: block;
+    }
+    #mob_mail{
+        margin-top: 12px;
+    }
+
+}
+
+
+ 
+/* For small mobile phones from 425px to 576px*/
+
+@media only screen and (max-width:576px){
+    .message_header{
+        display: none;
+    }
+    .Mobile_nav{
+        display: flex;
+        margin-top: 64px;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+    }
+    .Mob_menu{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        justify-content: flex-start;
+    }
+    .Mob_Icons{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+    #ios_mob{
+        margin-top: 4px;
+        margin-bottom: 3px;
+    }
+    .Mob_HD{
+        width: 60px;
+        padding: 10px;
+    }
+    .message_container {
+        margin: 0px;
+        width: 100%;
+    }
+    .Mob_Mail{
+        background-color: #31AAB7 ;
+        width: 60px;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        float: right;
+        margin-top: 125px;
+    }
+
+
+    .Maylee_chat1{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .Maylee_chat3{
+        width: 100%;
+    }
+    .Jody_chat{
+        width: 80%;
+    }
+    .Alex_chat{
+        width: 100%;
+    }
+    .Maylee_chat2{
+        width: 80%;
+    }
+    .Welcome_title {
+        font-size: 18px;
+        width: 60%;
+    }
+    .Chat_Icons{
+        width: 40%;
+    }
+    .group_image {
+        width: 22px;
+        height: 22px;
+    }
+    .input1{
+        height: 50px;
+    }
+    .add_icon{
+        margin-top: 35px;
+        padding: 0;
+    }
+    .Bottom_input{
+        width:100%;
+    }
+    .mayle_matter1{
+        font-size: 14px;
+    }
+    .mayle_name{
+        font-size: 14px;
+    }
+    .mayle_img1{
+        text-align: center;
     }
 }

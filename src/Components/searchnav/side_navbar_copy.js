@@ -30,7 +30,6 @@ import HDWY from '../Images/HDWY.png'
 import '../searchnav/styles.css'
 import maylee from '../Images/maylee.png'
 
-
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -73,10 +72,10 @@ const useStyles = makeStyles((theme) => ({
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
         justifyContent: 'flex-end',
-        marginTop: '5px',
+        marginTop: '6px',
     },
     drawerFooter: {
-        paddingTop: '298px',
+        paddingTop: '300px',
         display: 'flex',
     },
     grow: {
@@ -99,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: alpha(theme.palette.common.white, 0.25),
         },
         marginRight: theme.spacing(5),
-        marginLeft: theme.spacing(10),
+        marginLeft: theme.spacing(5),
         width: '100%',
         height: '50',
         [theme.breakpoints.up('sm')]: {
@@ -160,17 +159,17 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function PersistentDrawerLeft() {
+export default function PersistentDrawerLeft1() {
     const classes = useStyles();
     const theme = useTheme();
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
 
     const handleDrawerOpen = () => {
         setOpen(true);
     };
 
     const handleDrawerClose = () => {
-        setOpen(true);
+        setOpen(false);
     };
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -257,14 +256,13 @@ export default function PersistentDrawerLeft() {
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <AppBar id="App_Bar"
+            <AppBar id="App_Bar2"
                 position="fixed"
-
                 className={clsx(classes.appBar, {
                     [classes.appBarShift]: open,
                 })}
             >
-                <Toolbar id="App_Main">
+                <Toolbar>
 
                     <IconButton
                         color="black"
@@ -291,18 +289,18 @@ export default function PersistentDrawerLeft() {
                         />
                     </div>
                     <div className={classes.grow} />
-                    <div className={classes.sectionDesktop}  >
-                        <IconButton aria-label="show 17 new notifications" id="Not_Icon">
-                            <Badge badgeContent="" variant="dot" color="primary">
-                                <div ><NotificationsIcon /></div>
+                    <div className={classes.sectionDesktop}>
+                        <IconButton aria-label="show 17 new notifications" color="black">
+                            <Badge badgeContent="" variant="dot" color="secondary">
+                                <NotificationsIcon />
                             </Badge>
                         </IconButton>
-                        <IconButton aria-label="" color="black" id="Set_icon">
+                        <IconButton aria-label="" color="black">
                             <Badge color="Primary" id="set_opt" >
                                 <SettingsIcon />
                             </Badge>
                         </IconButton>
-                        <IconButton id="nav_dot"
+                        <IconButton id="nav-dot"
                             edge="end"
                             aria-label="account of current user"
                             aria-controls={menuId}
@@ -338,13 +336,9 @@ export default function PersistentDrawerLeft() {
                     paper: classes.drawerPaper,
                 }}
             >
-                <div className={classes.drawerHeader} >
-                    <div class="inside_menu">
-                        <div class="logo_image">
-                            <img src={HDWY} class="menu_image" /></div>
-                        <div class="Menu_Name">Menu</div>
-                    </div>
-                    <IconButton onClick={handleDrawerClose} id="Hide_icon">
+                <div className={classes.drawerHeader}>
+
+                    <IconButton onClick={handleDrawerClose}>
                         {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                     </IconButton>
 
@@ -358,7 +352,6 @@ export default function PersistentDrawerLeft() {
                         </ListItem>
                     ))}
                 </List>
-                <Divider />
                 <div className={classes.drawerFooter} >
                     <div class="inside_menu">
                         <div class="user_image">
@@ -367,6 +360,7 @@ export default function PersistentDrawerLeft() {
                     </div>
 
                 </div>
+                <Divider />
 
             </Drawer>
         </div>
