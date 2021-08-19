@@ -29,6 +29,11 @@ import Ios_Switch from '../Switch/Toggle_Switch'
 import HDWY from '../Images/HDWY.png'
 import '../searchnav/styles.css'
 import maylee from '../Images/maylee.png'
+import DashboardRoundIcon from '@material-ui/icons/Dashboard';
+import DraftsIcon from '@material-ui/icons/Drafts';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import DescriptionIcon from '@material-ui/icons/Description';
+import MenuBookRoundedIcon from '@material-ui/icons/MenuBookRounded';
 
 const drawerWidth = 240;
 
@@ -75,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '6px',
     },
     drawerFooter: {
-        paddingTop: '300px',
+        marginTop: 'auto',
         display: 'flex',
     },
     grow: {
@@ -344,13 +349,37 @@ export default function PersistentDrawerLeft1() {
 
                 </div>
                 <Divider />
-                <List>
-                    {['Dashboard', 'Messages', 'Directory', 'Acension', 'Design Files'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <SettingsIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
+                <List component="nav" aria-label="main mailbox folders">
+                    <ListItem button>
+                        <ListItemIcon>
+                            <DashboardRoundIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Dashboard" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <MailOutlineIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Messages" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <MenuBookRoundedIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Directory" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <DescriptionIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Accension Guide" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <DraftsIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Design Files" />
+                    </ListItem>
                 </List>
                 <div className={classes.drawerFooter} >
                     <div class="inside_menu">

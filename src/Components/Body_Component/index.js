@@ -1,6 +1,5 @@
 import react, { Component } from 'react';
 import './styles.css';
-import EditIcon from '@material-ui/icons/Edit';
 import AddIcon from '@material-ui/icons/Add';
 import maylee from '../Images/maylee.png';
 import hale from '../Images/hale.png';
@@ -14,13 +13,17 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import Ios_Switch from '../Switch/Toggle_Switch'
 import IconButton from '@material-ui/core/IconButton';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import SimplePopover from './popup'
+
+
+
 
 export class Classprops extends Component {
 
     render() {
 
         return (
-            <div class="Main_Body_Container" >
+            <div class="Main_Body_Container">
                 <div class="empty_cont"></div>
                 <div class="Body_Part_Container">
                     <div class="Mobile_nav">
@@ -36,74 +39,75 @@ export class Classprops extends Component {
                             <IconButton id="ios_mob"><Ios_Switch /></IconButton>
                         </div>
                     </div>
-                    <div class='message_container' >
+                    <div class='message_container'>
                         <div class="message_header">
                             <div class="message_title">
                                 Messages
                             </div>
                             <div class="compose_container">
-                                <Button variant="contained" Id="Button_Compose">
-                                    <EditIcon />Compose
-                                </Button>
+                                <SimplePopover />
                             </div>
                         </div>
-                        <div class="maylee_chat">
-                            <div class="message_wrap">
-                                <div class="maylee_img">
-                                    <img class="mayle_image" alt="Remy Sharp" src={maylee} />
-                                </div>
-                                <div class="Maylee_content">
-                                    <div class="maylee_header">
-                                        <div class="Maylee_sideheader">Welcome Abroad!</div>
-                                        <div class="maylee_time">9:33 AM</div>
+                        <div class="chat_side_container">
+                            <div class="maylee_chat">
+                                <div class="message_wrap">
+                                    <div class="maylee_img">
+                                        <img class="mayle_image" alt="Remy Sharp" src={maylee} />
                                     </div>
-                                    <div class="maylee_subcontent">
-                                        Have a good weekend! See you Monday morning!
+                                    <div class="Maylee_content">
+                                        <div class="maylee_header">
+                                            <div class="Maylee_sideheader">Welcome Abroad!</div>
+                                            <div class="maylee_time">9:33 AM</div>
+                                        </div>
+                                        <div class="maylee_subcontent">
+                                            Have a good weekend! See you Monday morning!
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="spot_dot">
-                                    <div class="blue_dot"></div>
+                                    <div class="spot_dot">
+                                        <div class="blue_dot"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="maylee_chat">
-                            <div class="message_wrap1">
-                                <div class="hale_img">
-                                    <img class="hale_image" alt="Remy Sharp" src={hale} />
-                                </div>
-                                <div class="hale_content">
-                                    <div class="maylee_header">
-                                        <div class="Maylee_sideheader">Welcome!</div>
-                                        <div class="maylee_time">9:02 AM</div>
+                            <div class="maylee_chat">
+                                <div class="message_wrap1">
+                                    <div class="hale_img">
+                                        <img class="hale_image" alt="Remy Sharp" src={hale} />
                                     </div>
-                                    <div class="maylee_subcontent">
-                                        Hi Conner, Welcome to the team! You should be receiving an email...
+                                    <div class="hale_content">
+                                        <div class="maylee_header">
+                                            <div class="Maylee_sideheader">Welcome!</div>
+                                            <div class="maylee_time">9:02 AM</div>
+                                        </div>
+                                        <div class="maylee_subcontent">
+                                            Hi Conner, Welcome to the team! You should be receiving an email...
+                                        </div>
+                                    </div>
+                                    <div class="spot_dot">
+                                        <div class="blue_dot"></div>
                                     </div>
                                 </div>
-                                <div class="spot_dot">
-                                    <div class="blue_dot"></div>
-                                </div>
-                            </div>
 
-                        </div>
-                        <div class="maylee_chat">
-                            <div class="message_wrap3">
-                                <div class="Jody_img">
-                                    <img class="mayle_image" alt="Remy Sharp" src={Jody} />
-                                </div>
-                                <div class="Jody_content">
-                                    <div class="maylee_header">
-                                        <div class="Maylee_sideheader">Getting Started</div>
-                                        <div class="maylee_time">7:35 AM</div>
+                            </div>
+                            <div class="maylee_chat">
+                                <div class="message_wrap3">
+                                    <div class="Jody_img">
+                                        <img class="mayle_image" alt="Remy Sharp" src={Jody} />
                                     </div>
-                                    <div class="maylee_subcontent">
-                                        Hey Conner, When you get up and running you should see an invite...
+                                    <div class="Jody_content">
+                                        <div class="maylee_header">
+                                            <div class="Maylee_sideheader">Getting Started</div>
+                                            <div class="maylee_time">7:35 AM</div>
+                                        </div>
+                                        <div class="maylee_subcontent">
+                                            Hey Conner, When you get up and running you should see an invite...
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="spot_dot">
-                                    <div class="blue_dot"></div>
+                                    <div class="spot_dot">
+                                        <div class="blue_dot"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="empty_div_class"></div>
                         </div>
                         <div class="Mob_Mail"><MailOutlineIcon fontSize="large" id="mob_mail" /></div>
                     </div>

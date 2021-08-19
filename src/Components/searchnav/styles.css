@@ -31,6 +31,7 @@
     width: 60px;
     height: 60px;
     margin-top: 4px;
+    
 }
 #Set_icon{
     width: 60px;
@@ -38,7 +39,7 @@
     margin-top: 2px;
 }
 #App_Main{
-    padding: 3px 10px;
+    padding: 3px 20px;
 }
 #Hide_icon{
     color: white;
@@ -50,9 +51,7 @@
     padding: 5px;
     font-family: 'Work Sans', sans-serif;
 }
-.user_image{
-    padding: 10px;
-}
-#color_set{
-    color: #0078CE;
+
+.MuiBadge-dot{
+    background-color:#0078CE ;
 }

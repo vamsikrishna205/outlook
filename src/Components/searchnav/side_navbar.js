@@ -15,7 +15,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import { alpha } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
@@ -29,7 +28,11 @@ import Ios_Switch from '../Switch/Toggle_Switch'
 import HDWY from '../Images/HDWY.png'
 import '../searchnav/styles.css'
 import maylee from '../Images/maylee.png'
-
+import DashboardRoundIcon from '@material-ui/icons/Dashboard';
+import DraftsIcon from '@material-ui/icons/Drafts';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import DescriptionIcon from '@material-ui/icons/Description';
+import MenuBookRoundedIcon from '@material-ui/icons/MenuBookRounded';
 
 const drawerWidth = 240;
 
@@ -47,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     },
     appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
-        marginLeft: drawerWidth,
+
         transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.easeOut,
             duration: theme.transitions.duration.enteringScreen,
@@ -76,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '5px',
     },
     drawerFooter: {
-        paddingTop: '298px',
+        marginTop: 'auto',
         display: 'flex',
     },
     grow: {
@@ -293,7 +296,7 @@ export default function PersistentDrawerLeft() {
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}  >
                         <IconButton aria-label="show 17 new notifications" id="Not_Icon">
-                            <Badge badgeContent="" variant="dot" color="primary">
+                            <Badge badgeContent="" variant="dot" color="default">
                                 <div ><NotificationsIcon /></div>
                             </Badge>
                         </IconButton>
@@ -349,18 +352,42 @@ export default function PersistentDrawerLeft() {
                     </IconButton>
 
                 </div>
-                <Divider />
-                <List>
-                    {['Dashboard', 'Messages', 'Directory', 'Acension', 'Design Files'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <SettingsIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
+
+                <List component="nav" aria-label="main mailbox folders">
+                    <ListItem button>
+                        <ListItemIcon>
+                            <DashboardRoundIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Dashboard" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <MailOutlineIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Messages" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <MenuBookRoundedIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Directory" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <DescriptionIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Accension Guide" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <DraftsIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Design Files" />
+                    </ListItem>
                 </List>
                 <Divider />
                 <div className={classes.drawerFooter} >
-                    <div class="inside_menu">
+                    <div class="inside_menu" >
                         <div class="user_image">
                             <img src={maylee} class="menu_image" /></div>
                         <div class="user_Name">Maylee Bettle</div>

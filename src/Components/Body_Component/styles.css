@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .Main_Body_Container{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     background-color: white;
+    
 }
 .empty_cont{
     width:17%;
@@ -19,24 +20,57 @@
     margin-top: 64px;
     padding: 0px 20px;
     background-color: white;
+    overflow-y: scroll;
+    height: 550px;
 }
 .message_container{
     margin-top: 64px;
     background-color: #F8FAFB;
     width: 37%;
     padding: 20px;
-    line-height: 1.20;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
     
+}
+.chat_side_container{
+    overflow-y: scroll;
+    height: 1000px;
+    padding: 5px;
+}
+
+
+/* width */
+
+.chat_side_container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .chat_side_container::-webkit-scrollbar-track {
+    background: #F8FAFB; 
+  }
+   
+  /* Handle */
+  .chat_side_container::-webkit-scrollbar-thumb {
+    background: #F8FAFB; 
+  }
+  
+.empty_div_class{
+    height: 1000px;
 }
 .message_header{
     display: flex;  
     width: 100%;
     padding:20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
 }
 
 .message_title{
     font-size: 28px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 65%;
 }
 .compose_container{
@@ -45,19 +79,18 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    
     border-radius: 2px;
 }
 #Button_Compose{
     background-color: #31AAB7;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 .edit_img{
     padding: 5px;
 }
 .Compose_title{
-    font-family: 'Work Sans', sans-serif;   
+    font-family: 'Roboto', sans-serif;  
 }
 .message_wrap{
     display: flex;
@@ -106,15 +139,15 @@
 }
 .Maylee_sideheader{
     width: 75%;
-    font-weight: 800;
+    font-weight: 600;
     color: #324552;
-    font-family: 'Work Sans', sans-serif;  
+    font-family: 'Roboto', sans-serif;  
 }
 .maylee_time{
     width: 25%;
     font-size: 10px;
     text-align: center;
-    font-family: 'Work Sans', sans-serif;  
+    font-family: 'Roboto', sans-serif;
 }
 .Maylee_content{
     padding: 10px 0px ;
@@ -156,7 +189,7 @@
 .maylee_subcontent{
     color: #324552;
     padding:5px 5px 5px 0px;
-    font-family: 'Work Sans', sans-serif;  
+    font-family: 'Roboto', sans-serif;  
 }
 .blue_dot{
     width: 8px;
@@ -178,7 +211,7 @@
     width: 70%;
     font-size: 30px;
     font-weight: 400;
-    font-family: 'Work Sans', sans-serif;   
+    font-family: 'Roboto', sans-serif;   
 }
 .Chat_Icons{
     width: 30%;
@@ -220,27 +253,26 @@
     padding: 5px;
 }
 .mayle_img1{
-    padding: 10px;
+    padding: 8px;
     text-align: center;
 }
 .mayle_timer{
     width: 25%;
     
-    font-family: 'Work Sans', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
 }
 .mayle_name{
     font-size: 14px;
     font-weight: 600;
-    font-family: 'Work Sans', sans-serif;   
+    font-family: 'Roboto', sans-serif;   
 }
 .mayle_matter1{
-    padding: 20px;
-    font-family: 'Work Sans', sans-serif;
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
     background-color: #0078CE;
     border-radius: 8px;
     color: white;
-    width: 90%;
-    margin: 10px;
+    margin: 0px 10px;
 }
 .Jody_chat{
     width: 50%;
@@ -249,11 +281,10 @@
 }
 .jody_matter1{
     padding: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #F8FAFB;
     border-radius: 8px;
-    width: 90%;
-    margin: 10px;
+    margin:0px 10px;
 }
 .Alex_chat{
     width:52%;
@@ -262,12 +293,11 @@
 }
 .Alex_matter1{
     padding: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #0078CE;
     color: white;
     border-radius: 8px;
-    width: 90%;
-    margin: 10px;
+    margin:0px 10px 10px 10px;
 }
 .Maylee_chat2{
     width: 51%;
@@ -276,11 +306,10 @@
 }
 .mayle_matter2{
     padding: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #F8FAFB;
     border-radius: 8px;
-    width: 95%;
-    margin: 10px;
+    margin: 0px 10px;
 }
 .Maylee_chat3{
     width: 54%;
@@ -292,9 +321,7 @@
     padding: 0px 20px;
     display: flex;
     align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
+    
 }
 .input_field{
     width: 90%;
@@ -304,7 +331,7 @@
     border: none;
     font-size: 20px;
     height: 4vw;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .add_icon{
     padding: 20px;
@@ -329,13 +356,66 @@
 }
 
 
+/*popover Styles*/
+.main_pop{
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+    background-color: #F8FAFB;
+    
+}
+
+.pop1{
+    margin-top: 25px;
+    height: 35px;
+}
+.pop2{
+    height: 35px;
+    margin-top: 5px;
+}
+.pop3{
+    margin-top: 5px;
+    padding: 10px 0px 100px 0px;
+}
+.pop1,.pop2,.pop3{
+    width: 450px;
+    margin-left: 25px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 1px grey;
+    border-radius: 5px;
+}
+#pop_Button{
+    background-color: #31AAB7;
+    color: white;
+    padding: 6px 20px;
+    margin: 20px 28px ;
+    float: right;
+}
+#pop_mail{
+    margin-right: 10px;
+}
 /*media Queries for large laptops*/
-@media only screen and (min-width:1201px) and (max-width:1496px){
+@media only screen and (min-width:1201px) {
     .Chat_Container {
-        width: 57%;
+        max-width: 61%;
+        height: 650px;
+        
     }
-
-
+    .empty_cont{
+        max-width: 14%;
+    }
+    .Main_Body_Container{
+        position: fixed;
+    }
+    .Body_Part_Container{
+        min-width: 86%;
+    }
+    .message_container{
+        max-width: 31%;
+        position: fixed;
+        left: 242px;
+    }
 }
 
 
@@ -344,25 +424,29 @@
 /* media queries for laptop*/
 
 @media only screen and (max-width: 1200px){
-    
-    #Button_Compose{
-        font-size: 12px;
+
+    .Main_Body_Container{
+        position: fixed;
     }
     .message_title {
         font-size: 26px;
     }
     .message_container{
-        width:38%;
+        width: 34%;
+        position: fixed;
+        left: 241px;
+
     }
     .Chat_Container{
         width: 50%;
+        height: 500px;
     }
     .message_header{
         padding: 20px 0px;
     }
     .message_title {
         font-size: 28px;
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         width: 60%;
     }
     .compose_container{
@@ -456,15 +540,20 @@
 /*Media Queries for Tablet*/
  
 @media only screen and (max-width:992px){
+    .Main_Body_Container{
+        position: fixed;
+    }
     
     .empty_cont{
         display: none;
     }
     .message_container{
         width: 40%;
+        left:0;
     }
     .Chat_Container{
         width: 60%;
+        height: 495px;
     }
     .mayle_image {
         width: 80%;
@@ -565,20 +654,34 @@
 /*Media Queiries for Mobiles */
 
 @media only screen and (max-width:768px){
+    .Main_Body_Container{
+        position: absolute;
+    }
+    
+    .empty_div_class{
+        height: 0;
+    }
     .message_header{
         display: none;
     }
     .Body_Part_Container{
         display: grid;
+        
+    }
+    .chat_side_container{
+        height: auto;
     }
     .message_container {
         width: 80%;
-        height: 100vh;
         margin: 10%;
+        position: absolute;
+        top:140px;
     }
     .Chat_Container {
         width: 90%;
-        margin: 0% 5%;
+        margin: 566px 5% 0% 5%;
+        overflow-y: hidden;
+        height: 61%;
     }
     .Bottom_input {
         width: 100%;
@@ -663,11 +766,15 @@
     }
     .Mob_Mail{
         display: block;
+        margin-top: 80px;
     }
     #mob_mail{
         margin-top: 12px;
     }
-
+    .Bottom_input{
+        width:100%;
+        
+    }
 }
 
 
@@ -675,6 +782,27 @@
 /* For small mobile phones from 425px to 576px*/
 
 @media only screen and (max-width:576px){
+    .Main_Body_Container{
+        position: relative;
+    }
+    .empty_div_class{
+        height: 0;
+    }
+    .Main_Body_Container{
+        position:absolute;
+    }
+    .chat_side_container{
+        overflow-y: hidden;
+        height: auto;
+    }
+    .Chat_Container{
+        display: block;
+        overflow-y: hidden;
+        height: 970px;
+    }
+    .empty_div_class{
+        display: none;
+    }
     .message_header{
         display: none;
     }
@@ -715,7 +843,7 @@
         text-align: center;
         color: white;
         float: right;
-        margin-top: 125px;
+        margin-top: 80px;
     }
 
 
@@ -755,6 +883,7 @@
     }
     .Bottom_input{
         width:100%;
+
     }
     .mayle_matter1{
         font-size: 14px;
