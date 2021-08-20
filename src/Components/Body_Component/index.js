@@ -148,7 +148,6 @@ export class Classprops extends Component {
                                         <img class="hale_image1" alt="Remy Sharp" src={hale} />
                                     </div>
                                     <div class="mayle_name">Jody A.</div>
-
                                 </div>
                                 <div class="mayle_timer">9:33 AM</div>
                             </div>
@@ -200,10 +199,14 @@ export class Classprops extends Component {
                             <div class="mayle_matter1">
                                 Have a good weekend! See you Monday morning!
                             </div>
+
                         </div>
                         <div class="Bottom_input">
-                            <div class="input_field"><input class="input1" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Type a message..." title="Type in a category"></input></div>
-                            <div class="add_icon"><AddIcon /></div>
+                            <div class="input_field"><input class="input1" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Type a message..." title="Type in a category"></input><AddIcon /></div>
+                            <div class="add_icon"></div>
+                        </div>
+                        <div class="mayle_matter5">
+
                         </div>
                     </div>
                 </div>

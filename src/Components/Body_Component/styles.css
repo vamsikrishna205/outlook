@@ -20,9 +20,12 @@
     margin-top: 64px;
     padding: 0px 20px;
     background-color: white;
-    overflow-y: scroll;
-    height: 550px;
+    overflow-y: auto;
+}    
+.chat_inside_container{
+    height: 100vh;
 }
+
 .message_container{
     margin-top: 64px;
     background-color: #F8FAFB;
@@ -235,7 +238,7 @@
 }
 .Maylee_chat1{
     width: 50%;
-    padding: 20px;
+    padding: 10px;
 }
 .maylee_head{
     display: flex;
@@ -258,7 +261,6 @@
 }
 .mayle_timer{
     width: 25%;
-    
     font-family: 'Roboto', sans-serif; 
 }
 .mayle_name{
@@ -277,7 +279,7 @@
 .Jody_chat{
     width: 50%;
     float: right;
-    padding: 20px;
+    padding: 10px;
 }
 .jody_matter1{
     padding: 20px;
@@ -288,7 +290,7 @@
 }
 .Alex_chat{
     width:52%;
-    padding: 20px;
+    padding: 10px;
     float: left;
 }
 .Alex_matter1{
@@ -302,7 +304,7 @@
 .Maylee_chat2{
     width: 51%;
     float: right;
-    padding: 20px;
+    padding: 10px;
 }
 .mayle_matter2{
     padding: 20px;
@@ -313,7 +315,7 @@
 }
 .Maylee_chat3{
     width: 54%;
-    padding: 20px;
+    padding: 10px;
 }
 .Bottom_input{
     background-color: white;
@@ -321,14 +323,18 @@
     padding: 0px 20px;
     display: flex;
     align-items: center;
-    
+    position: fixed;
+    bottom: 0;
 }
 .input_field{
-    width: 90%;
+    width: 42%;
+    display: flex;
+    align-items: center;
 }
 .input1{
     width: 100%;
     border: none;
+    outline: none;
     font-size: 20px;
     height: 4vw;
     font-family: 'Roboto', sans-serif;
@@ -395,11 +401,20 @@
 #pop_mail{
     margin-right: 10px;
 }
+.mayle_matter5{
+    height: 140px;
+}
+
+
+
+
 /*media Queries for large laptops*/
 @media only screen and (min-width:1201px) {
     .Chat_Container {
-        max-width: 61%;
-        height: 650px;
+        width:auto;
+        position: absolute;
+        left: 640px;
+        height: 100vh;
         
     }
     .empty_cont{
@@ -412,9 +427,17 @@
         min-width: 86%;
     }
     .message_container{
-        max-width: 31%;
+        max-width: 400px;
         position: fixed;
         left: 242px;
+    }
+    .Bottom_input{
+        position: -webkit-sticky; /* Safari */
+        position: fixed;
+        bottom: 0;
+    }
+    .input_field{
+        width: 32%;
     }
 }
 
@@ -432,25 +455,28 @@
         font-size: 26px;
     }
     .message_container{
-        width: 34%;
+        max-width: 400px;
+        width: auto;
         position: fixed;
-        left: 241px;
+        left: 240px;
 
     }
     .Chat_Container{
-        width: 50%;
-        height: 500px;
+        width: auto;
+        position: absolute;
+        left: 640px;
+        height: 100vh;
     }
     .message_header{
-        padding: 20px 0px;
+        padding: 20px;
     }
     .message_title {
         font-size: 28px;
         font-family: 'Roboto', sans-serif;
-        width: 60%;
+        width: 65%;
     }
     .compose_container{
-        width:40%;
+        width:35%;
     }
     .maylee_time{
         font-size: 10px;
@@ -494,7 +520,8 @@
         font-size: 13px;
     }
     .Welcome_title {
-        width: 70%;
+        width: 60%;
+        font-size: 20px;
     }
     .Chat_Icons {
         width: 30%;
@@ -523,16 +550,16 @@
     .Chat_Board {
         width: 100%;
     }
-    .Welcome_title {
-        font-size: 24px;
-        width: 60%;
-    }
+    
     .Chat_Icons{
         width: 40%;
     }
     .group_image {
         width: 20px;
         height: 20px;
+    }
+    .input_field{
+        width: 32%;
     }
 }
 
@@ -548,12 +575,14 @@
         display: none;
     }
     .message_container{
-        width: 40%;
+        max-width: 350px;
         left:0;
     }
     .Chat_Container{
-        width: 60%;
-        height: 495px;
+        width: auto;
+        position: absolute;
+        left: 350px;
+        height: 100vh;
     }
     .mayle_image {
         width: 80%;
@@ -647,6 +676,9 @@
         width: 20px;
         height: 20px;
     }
+    .input_field{
+        width: 32%;
+    }
 }
 
 
@@ -664,32 +696,40 @@
     .message_header{
         display: none;
     }
+    .empty_cont {
+        display: none;
+    }
     .Body_Part_Container{
         display: grid;
-        
+        justify-content: normal;
     }
     .chat_side_container{
         height: auto;
+        
     }
     .message_container {
-        width: 80%;
-        margin: 10%;
+        max-width:-webkit-fill-available;
+        width:-webkit-fill-available;
+        margin: 0%;
         position: absolute;
         top:140px;
     }
     .Chat_Container {
-        width: 90%;
-        margin: 566px 5% 0% 5%;
+        width: 100%;
+        height: auto;
+        margin-top: 697px ;
         overflow-y: hidden;
-        height: 61%;
+       left: 0;
     }
     .Bottom_input {
         width: 100%;
         justify-content: space-between;
+        position: relative;
     }
     .input_field {
-        width: 90%;
+        width: inherit;
         height: 4vh;
+        padding: 20px;
     }
     .Maylee_sideheader {
         font-size: 15px;
@@ -750,10 +790,6 @@
         width: 60px;
         padding: 10px;
     }
-    .message_container {
-        margin: 0px;
-        width: 100%;
-    }
     .Mob_Mail{
         background-color: #31AAB7 ;
         width: 60px;
@@ -775,6 +811,9 @@
         width:100%;
         
     }
+    .mayle_matter5{
+        display: none;
+    }
 }
 
 
@@ -791,14 +830,22 @@
     .Main_Body_Container{
         position:absolute;
     }
+    .Body_Part_Container{
+        justify-content: initial;
+    }
     .chat_side_container{
         overflow-y: hidden;
         height: auto;
+        
     }
     .Chat_Container{
         display: block;
         overflow-y: hidden;
-        height: 970px;
+        height: auto;
+        left: 0;
+        margin: 750px 0px 0px 0px;
+        width: auto;
+        
     }
     .empty_div_class{
         display: none;
@@ -834,7 +881,7 @@
     }
     .message_container {
         margin: 0px;
-        width: 100%;
+        
     }
     .Mob_Mail{
         background-color: #31AAB7 ;
@@ -893,5 +940,8 @@
     }
     .mayle_img1{
         text-align: center;
+    }
+    .mayle_matter5{
+        display: none;
     }
 }
