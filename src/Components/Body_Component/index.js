@@ -6,15 +6,14 @@ import hale from '../Images/hale.png';
 import Jody from '../Images/Jody.png';
 import Alex from '../Images/Alex.png';
 import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
 import HDWY from '../Images/HDWY.png'
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import SettingsIcon from '@material-ui/icons/Settings';
 import Ios_Switch from '../Switch/Toggle_Switch'
 import IconButton from '@material-ui/core/IconButton';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import SimplePopover from './popup'
 
+import TransitionsModal from './modal/popup'
+import TransitionsMob from '../Body_Component/modal/mob_pop'
 
 
 
@@ -45,7 +44,7 @@ export class Classprops extends Component {
                                 Messages
                             </div>
                             <div class="compose_container">
-                                <SimplePopover />
+                                <TransitionsModal />
                             </div>
                         </div>
                         <div class="chat_side_container">
@@ -109,7 +108,7 @@ export class Classprops extends Component {
                             </div>
                             <div class="empty_div_class"></div>
                         </div>
-                        <div class="Mob_Mail"><MailOutlineIcon fontSize="large" id="mob_mail" /></div>
+                        <div class="mob_comp"><TransitionsMob /></div>
                     </div>
                     <div class="Chat_Container" >
                         <div class="Chat_Board">

@@ -381,7 +381,7 @@
 }
 .pop3{
     margin-top: 5px;
-    padding: 10px 0px 100px 0px;
+    padding: 10px 0px 120px 0px;
 }
 .pop1,.pop2,.pop3{
     width: 450px;
@@ -390,6 +390,7 @@
     border: none;
     box-shadow: 0px 0px 1px grey;
     border-radius: 5px;
+    outline: none;
 }
 #pop_Button{
     background-color: #31AAB7;
@@ -401,12 +402,14 @@
 #pop_mail{
     margin-right: 10px;
 }
+
+#compose_pop{
+    background-color: #31AAB7;
+    color: white;
+}
 .mayle_matter5{
     height: 140px;
 }
-
-
-
 
 /*media Queries for large laptops*/
 @media only screen and (min-width:1201px) {
@@ -799,6 +802,7 @@
         color: white;
         float: right;
         margin-top: 140px;
+        border:none;
     }
     .Mob_Mail{
         display: block;

@@ -235,8 +235,7 @@ export default function PersistentDrawerLeft1() {
             </MenuItem>
             <MenuItem>
                 <IconButton aria-label="show 11 new notifications" color="primary">
-                    <Badge badgeContent="" variant="dot"
-                        color="secondary">
+                    <Badge badgeContent="" variant="dot">
                         <NotificationsIcon />
                     </Badge>
                 </IconButton>
@@ -296,7 +295,7 @@ export default function PersistentDrawerLeft1() {
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
                         <IconButton aria-label="show 17 new notifications" color="black">
-                            <Badge badgeContent="" variant="dot" color="secondary">
+                            <Badge badgeContent="" variant="dot">
                                 <NotificationsIcon />
                             </Badge>
                         </IconButton>
@@ -342,6 +341,11 @@ export default function PersistentDrawerLeft1() {
                 }}
             >
                 <div className={classes.drawerHeader}>
+                    <div class="inside_menu">
+                        <div class="logo_image">
+                            <img src={HDWY} class="menu_image" /></div>
+                        <div class="Menu_Name">Menu</div>
+                    </div>
 
                     <IconButton onClick={handleDrawerClose}>
                         {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -357,10 +361,12 @@ export default function PersistentDrawerLeft1() {
                         <ListItemText primary="Dashboard" />
                     </ListItem>
                     <ListItem button>
-                        <ListItemIcon>
+                        <ListItemIcon variant="dot">
                             <MailOutlineIcon />
                         </ListItemIcon>
+                        <ListItemText primary=" " id="blog_dot" />
                         <ListItemText primary="Messages" />
+                        <ListItemText primary="3" id="blog_3" />
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>

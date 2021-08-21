@@ -365,6 +365,7 @@ export default function PersistentDrawerLeft() {
                             <MailOutlineIcon />
                         </ListItemIcon>
                         <ListItemText primary="Messages" />
+                        <ListItemText primary="3" id="blog_3" />
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
