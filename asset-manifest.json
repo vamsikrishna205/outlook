@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/outlook/static/css/main.8c293239.chunk.css",
-    "main.js": "/outlook/static/js/main.e637e35e.chunk.js",
-    "main.js.map": "/outlook/static/js/main.e637e35e.chunk.js.map",
-    "runtime-main.js": "/outlook/static/js/runtime-main.2743669c.js",
-    "runtime-main.js.map": "/outlook/static/js/runtime-main.2743669c.js.map",
-    "static/js/2.ad941dbf.chunk.js": "/outlook/static/js/2.ad941dbf.chunk.js",
-    "static/js/2.ad941dbf.chunk.js.map": "/outlook/static/js/2.ad941dbf.chunk.js.map",
-    "static/js/3.c15fc436.chunk.js": "/outlook/static/js/3.c15fc436.chunk.js",
-    "static/js/3.c15fc436.chunk.js.map": "/outlook/static/js/3.c15fc436.chunk.js.map",
+    "main.css": "/outlook/static/css/main.af241772.chunk.css",
+    "main.js": "/outlook/static/js/main.f7d1512c.chunk.js",
+    "main.js.map": "/outlook/static/js/main.f7d1512c.chunk.js.map",
+    "runtime-main.js": "/outlook/static/js/runtime-main.eee737ec.js",
+    "runtime-main.js.map": "/outlook/static/js/runtime-main.eee737ec.js.map",
+    "static/js/2.c19d05ab.chunk.js": "/outlook/static/js/2.c19d05ab.chunk.js",
+    "static/js/2.c19d05ab.chunk.js.map": "/outlook/static/js/2.c19d05ab.chunk.js.map",
+    "static/js/3.2d6269b5.chunk.js": "/outlook/static/js/3.2d6269b5.chunk.js",
+    "static/js/3.2d6269b5.chunk.js.map": "/outlook/static/js/3.2d6269b5.chunk.js.map",
     "index.html": "/outlook/index.html",
-    "static/css/main.8c293239.chunk.css.map": "/outlook/static/css/main.8c293239.chunk.css.map",
-    "static/js/2.ad941dbf.chunk.js.LICENSE.txt": "/outlook/static/js/2.ad941dbf.chunk.js.LICENSE.txt",
+    "static/css/main.af241772.chunk.css.map": "/outlook/static/css/main.af241772.chunk.css.map",
+    "static/js/2.c19d05ab.chunk.js.LICENSE.txt": "/outlook/static/js/2.c19d05ab.chunk.js.LICENSE.txt",
     "static/media/Alex.a5550600.png": "/outlook/static/media/Alex.a5550600.png",
     "static/media/hale.a8790664.png": "/outlook/static/media/hale.a8790664.png",
     "static/media/maylee.87d75ce5.png": "/outlook/static/media/maylee.87d75ce5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2743669c.js",
-    "static/js/2.ad941dbf.chunk.js",
-    "static/css/main.8c293239.chunk.css",
-    "static/js/main.e637e35e.chunk.js"
+    "static/js/runtime-main.eee737ec.js",
+    "static/js/2.c19d05ab.chunk.js",
+    "static/css/main.af241772.chunk.css",
+    "static/js/main.f7d1512c.chunk.js"
   ]
 }
