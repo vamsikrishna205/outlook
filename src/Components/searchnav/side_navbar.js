@@ -356,14 +356,16 @@ export default function PersistentDrawerLeft() {
                 </div>
 
                 <List component="nav" aria-label="main mailbox folders">
-                    <ListItem button>
-                        <ListItemIcon>
-                            <MailOutlineIcon />
-                            <ListItemText id="msg_dot" />
-                        </ListItemIcon>
-                        <ListItemText primary="Messages" />
-                        <ListItemText primary="3" id="blog_3" />
-                    </ListItem>
+                    <a class="Home_link" href="https://vamsikrishna205.github.io/outlook/">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <MailOutlineIcon />
+                                <ListItemText id="msg_dot" />
+                            </ListItemIcon>
+                            <ListItemText primary="Messages" />
+                            <ListItemText primary="3" id="blog_3" />
+                        </ListItem>
+                    </a>
 
                     <a class="todo_link" href="https://vamsikrishna205.github.io/todo/" styles={{ textDecoration: "auto" }}>
                         <ListItem button>
