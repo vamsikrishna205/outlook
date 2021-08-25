@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/outlook/static/css/main.af241772.chunk.css",
-    "main.js": "/outlook/static/js/main.f7d1512c.chunk.js",
-    "main.js.map": "/outlook/static/js/main.f7d1512c.chunk.js.map",
+    "main.js": "/outlook/static/js/main.9e4f574e.chunk.js",
+    "main.js.map": "/outlook/static/js/main.9e4f574e.chunk.js.map",
     "runtime-main.js": "/outlook/static/js/runtime-main.eee737ec.js",
     "runtime-main.js.map": "/outlook/static/js/runtime-main.eee737ec.js.map",
     "static/js/2.c19d05ab.chunk.js": "/outlook/static/js/2.c19d05ab.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.eee737ec.js",
     "static/js/2.c19d05ab.chunk.js",
     "static/css/main.af241772.chunk.css",
-    "static/js/main.f7d1512c.chunk.js"
+    "static/js/main.9e4f574e.chunk.js"
   ]
 }
