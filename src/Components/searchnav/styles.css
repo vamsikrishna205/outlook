@@ -64,3 +64,12 @@
     text-align: center;
     border-radius: 20px;
 }
+.todo_link{
+    text-decoration: auto;
+    color: black;
+}
+#msg_dot{
+    background-color: #0078CE;
+    margin: 7px 11px;
+    border-radius: 100%;
+}
