@@ -68,6 +68,10 @@
     text-decoration: auto;
     color: black;
 }
+.Home_link{
+    text-decoration: auto;
+    color: black;
+}
 #msg_dot{
     background-color: #0078CE;
     margin: 7px 11px;
