@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/outlook/static/css/main.af241772.chunk.css",
+    "main.css": "/outlook/static/css/main.907ce0a4.chunk.css",
     "main.js": "/outlook/static/js/main.9e4f574e.chunk.js",
     "main.js.map": "/outlook/static/js/main.9e4f574e.chunk.js.map",
     "runtime-main.js": "/outlook/static/js/runtime-main.eee737ec.js",
@@ -10,7 +10,7 @@
     "static/js/3.2d6269b5.chunk.js": "/outlook/static/js/3.2d6269b5.chunk.js",
     "static/js/3.2d6269b5.chunk.js.map": "/outlook/static/js/3.2d6269b5.chunk.js.map",
     "index.html": "/outlook/index.html",
-    "static/css/main.af241772.chunk.css.map": "/outlook/static/css/main.af241772.chunk.css.map",
+    "static/css/main.907ce0a4.chunk.css.map": "/outlook/static/css/main.907ce0a4.chunk.css.map",
     "static/js/2.c19d05ab.chunk.js.LICENSE.txt": "/outlook/static/js/2.c19d05ab.chunk.js.LICENSE.txt",
     "static/media/Alex.a5550600.png": "/outlook/static/media/Alex.a5550600.png",
     "static/media/hale.a8790664.png": "/outlook/static/media/hale.a8790664.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.eee737ec.js",
     "static/js/2.c19d05ab.chunk.js",
-    "static/css/main.af241772.chunk.css",
+    "static/css/main.907ce0a4.chunk.css",
     "static/js/main.9e4f574e.chunk.js"
   ]
 }
